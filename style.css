@@ -9,7 +9,7 @@ body{
 }
 
 .container{
-    height: 70vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,8 +17,8 @@ body{
 }
 
 .game{
-    height: 60vmin;
-    width: 60vmin;
+    height: 50vmin;
+    width: 50vmin;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -27,8 +27,8 @@ body{
 }
 
 .box{
-    height: 19vmin;
-    width: 19vmin;
+    height: 15vmin;
+    width: 15vmin;
     border-radius: 1rem;
     border: none;
     color: rgb(135, 92, 116);
@@ -39,7 +39,7 @@ body{
 
 #reset-button{
     padding: 1rem;
-    font-size: 1.20rem;
+    font-size: 1rem;
     color: rgb(150, 95, 120);
     border: none;
     transition: all .3s;
@@ -49,4 +49,23 @@ body{
 #reset-button:hover{
     background-color: rgb(150, 95, 120);
     color: white;
+}
+
+.msg-container{
+    font-size: 40px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+#new-btn{
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: rgb(150, 95, 120);
+    border: none;
+    transition: all .3s;
+    border-radius: 1rem;
+}
+
+.hide{
+    display: none;
 }
