@@ -1,8 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    
+}
+body{
     text-align: center;
-    justify-content: center;
     background-color: rgb(84, 65, 78);
 }
 
@@ -29,6 +31,22 @@
     width: 19vmin;
     border-radius: 1rem;
     border: none;
-    background-color: rgb(135, 92, 116);
-    /* box-shadow: 0 0 1rem rgba(167, 144, 165, 0.1); */
+    color: rgb(135, 92, 116);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+
+}
+
+#reset-button{
+    padding: 1rem;
+    font-size: 1.20rem;
+    color: rgb(150, 95, 120);
+    border: none;
+    transition: all .3s;
+    border-radius: 1rem;
+}
+
+#reset-button:hover{
+    background-color: rgb(150, 95, 120);
+    color: white;
 }
