@@ -5,7 +5,8 @@
 }
 body{
     text-align: center;
-    background-color: rgb(84, 65, 78);
+    /* background-color: rgb(84, 65, 78); */
+    background-color: #124E78;
 }
 
 .container{
@@ -40,15 +41,18 @@ body{
 #reset-button{
     padding: 1rem;
     font-size: 1rem;
-    color: rgb(150, 95, 120);
+    /* color: rgb(150, 95, 120); */
+    color: #1b73b1;
     border: none;
     transition: all .3s;
     border-radius: 1rem;
 }
 
 #reset-button:hover{
-    background-color: rgb(150, 95, 120);
-    color: white;
+    /* background-color: rgb(150, 95, 120); */
+    background-color: #1b73b1;
+    /* color: white; */
+    color: #F0F0C9;
 }
 
 .msg-container{
@@ -58,7 +62,8 @@ body{
     align-items: center;
     flex-direction: column;
     font-size: 40px;
-    color: white;
+    /* color: white; */
+    color: #F0F0C9;
     padding-bottom: 30px;
     gap: 5rem;
 }
@@ -66,7 +71,8 @@ body{
 #new-btn{
     padding: 0.5rem;
     font-size: 1rem;
-    color: rgb(150, 95, 120);
+    /* color: rgb(150, 95, 120); */
+    color: #1b73b1;
     border: none;
     transition: all .3s;
     border-radius: 1rem;

@@ -29,11 +29,14 @@ btn.forEach((box) => {
         if (turn === true) {
             turn = false;
             box.innerText = "X";
-            box.style.color = "#582630";
+            // box.style.color = "#582630";
+            box.style.color="#25283d";
         } else {
             turn = true;
             box.innerText = "O";
-            box.style.color = "#6D435A";
+            // box.style.color = "#6D435A";
+            box.style.color = "#eac435";
+            
         }
         count++;
         checkWinner();
