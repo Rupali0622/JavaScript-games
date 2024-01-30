@@ -6,7 +6,7 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border: border-box;
+    /* border: border-box; */
 }
 .uppar-line{
     height: 50px;
@@ -15,12 +15,16 @@ body{
     color: white;
     text-align: center;
     font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container{
     height: 110px;
     width: 500px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 4rem;
     margin-top: 30px;
 }
 .box{
@@ -29,16 +33,56 @@ body{
     border-radius: 50%;
     transition: all;
 }
-#box1{
-    background-color: palevioletred;
+#rock{
+    /* background-color: palevioletred; */
+    background-image: url(rock.png);
+    background-size: cover;
 }
-#box2{
-    background-color: rgb(234, 224, 136);
+#paper{
+    /* background-color: rgb(234, 224, 136); */
+    background-image: url(paper.png);
+    background-size: cover;
 }
-#box3{
-    background-color: rgb(86, 200, 202);
+#scissors{
+    /* background-color: rgb(86, 200, 202); */
+    background-image: url(scissors.png);
+    background-size: cover;
 }
 
 .box:hover{
-    border: 4px solid rgb(13, 13, 44);
+    border: 0.5px solid rgb(13, 13, 44);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.score-board{
+    width: 100%;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+#user-score, #comp-score{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.msg-container{
+    height: 45px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    background-color: rgb(13, 13, 44);
+    border-radius: 20px;
+
+}
+
+#msg{
+    font-size: 1.5rem;
+    color: white;
+
 }
