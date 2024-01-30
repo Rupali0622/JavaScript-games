@@ -1,9 +1,13 @@
 let userscore = 0;
 let compscore = 0;
+let drawgamescore=0;
 
 const choices = document.querySelectorAll(".box");
 const msg=document.querySelector("#msg");
 const msgcontainer=document.querySelector(".msg-container");
+const userscorepara=document.querySelector("#user-score");
+const compscorepara=document.querySelector("#comp-score");
+const drawgamepara=document.querySelector("#game-draw");
 
 //generate random computer choice
 const gencompchoice = () => {
@@ -12,29 +16,28 @@ const gencompchoice = () => {
     return option[ranidx];
 }
 const drawgame = () => {
-    console.log("Draw Game");
+    drawgamescore++;
+    drawgamepara.innerText=drawgamescore;
     msg.innerText="Game was Draw. Play Again.";
     msgcontainer.style.backgroundColor="rgb(13, 13, 44)";
 }
 
 const showWinner=(userwin)=>{
     if(userwin){
-        console.log("You Win");
-        msg.innerText="You Win";
+        userscore++;
+        userscorepara.innerText=userscore;
+        msg.innerText=`You Win! `;
         msgcontainer.style.backgroundColor="green";
     }else{
-        console.log("You lose");
-        msg.innerText="You lose";
+        compscore++;
+        compscorepara.innerText=compscore;
+        msg.innerText=`You lost! `;
         msgcontainer.style.backgroundColor="red";
     }
 }
 
 const playgame = (userchoice) => {
-    //user choice
-    console.log("user choice= ", userchoice);
-    //computer choice
     const compchoice = gencompchoice();
-    console.log("comp choice= ", compchoice);
 
     if (userchoice === compchoice) {
         //Draw game
